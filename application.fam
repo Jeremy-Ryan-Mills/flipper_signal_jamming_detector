@@ -1,0 +1,11 @@
+App(
+    appid="flipper_signal_jamming_detector",
+    apptype=FlipperAppType.EXTERNAL,
+    name="Signal Jamming Detector",
+    entry_point="main",
+    stack_size=2 * 1024,
+    requires=["furi_hall", "furi_core"],
+    conflicts=["conflicting_app"],
+    provides=["signal_jam"],
+    order=50,
+)
